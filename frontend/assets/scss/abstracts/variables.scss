@@ -1,0 +1,23 @@
+$phone: 767px;
+$tablet: 1200px;
+$laptop: 1600px;
+$fullHD: 1920px;
+$screen2k: 2400px;
+$projectWidth: 1920;
+$projectWidthTablet: 768;
+$projectWidthMobile: 375;
+
+:root {
+    --white: #ffffff;
+    --black: #222222;
+    --pq_light_blue: #38b6ff;
+    --pq_dark_blue: #15253d;
+    --pq_yellow: #ffbd59;
+    --pq_gray: #615c5d;
+    --primary: var(--pq_yellow);
+    --transition: 0.3s all ease-in-out;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Caveat', cursive;
+    --font-tertiary: Arial, sans-serif;
+    --phone-w: #{$phone};
+}

@@ -1,0 +1,43 @@
+{
+  "name": "psychologiczne-iq",
+  "version": "1.0.0",
+  "engines": {
+      "node": "16.17.1",
+      "npm": "8.15.0"
+    },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "start": "nuxt start",
+    "heroku-postbuild": "npm run build"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "@nuxtjs/apollo": "^4.0.1-rc.5",
+    "@vimeo/player": "^2.16.1",
+    "apollo-boost": "^0.4.9",
+    "core-js": "^3.15.1",
+    "graphql": "^15.8.0",
+    "gsap": "^3.8.0",
+    "js-cookie": "^3.0.1",
+    "nuxt": "^2.15.7",
+    "nuxt-lazy-load": "^1.2.7",
+    "vue-apollo": "^3.1.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/gtm": "^2.4.0",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "@nuxtjs/svg": "^0.2.0",
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "graphql-tag": "^2.12.6",
+    "postcss": "^8.3.5",
+    "prettier": "^2.3.2",
+    "sass": "^1.42.1",
+    "sass-loader": "^10.2.0",
+    "vue-cli-plugin-apollo": "~0.22.2"
+  }
+}
