@@ -9,7 +9,7 @@ from blog.models import Post
 class Paragraph(models.Model):
     title = models.CharField(max_length=300)
     sub_title = models.CharField(max_length=500, blank=True)
-    rich_text = RichTextField()
+    rich_text = RichTextField(blank=True)
     post = models.ForeignKey(
         Post,
         on_delete=models.PROTECT,
@@ -29,9 +29,9 @@ class TextWithImage(models.Model):
         ('LE', 'left'),
         ('RI', 'right'),
     ]
-    image = models.FileField()
+    image = models.FileField(blank=True)
     rich_text = RichTextField()
-    image_position = models.CharField(choices=POSITIONS, max_length=2)
+    image_position = models.CharField(choices=POSITIONS, max_length=2, blank=True)
     elements = models.ForeignKey(
         'Element',
         blank=True,

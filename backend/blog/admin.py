@@ -24,7 +24,7 @@ class CategoryAdmin(admin.ModelAdmin):
 class ParagraphInline(nested_admin.NestedStackedInline):
     model = Paragraph
     inlines = [ElementsInline]
-    extra = 1
+    extra = 0
 
 
 @admin.register(Post)
@@ -44,6 +44,7 @@ class PostAdmin(nested_admin.NestedModelAdmin):
         })
     ]
     inlines = [GradeInline, ParagraphInline]
+    extra = 0
     list_display = (
         "id",
         "title",

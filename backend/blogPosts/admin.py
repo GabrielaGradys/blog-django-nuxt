@@ -11,6 +11,7 @@ class TextWithImageInline(nested_admin.NestedStackedInline):
 class ElementsInline(nested_admin.NestedStackedInline):
     model = Element
     inlines = [TextWithImageInline]
+    extra = 0
 
 
 class GradeInline(nested_admin.NestedStackedInline):
@@ -21,12 +22,14 @@ class GradeInline(nested_admin.NestedStackedInline):
 class ElementAdmin(nested_admin.NestedModelAdmin):
     model = Element
     inlines = [TextWithImageInline]
+    extra = 0
 
 
 @admin.register(Paragraph)
 class ParagraphAdmin(nested_admin.NestedModelAdmin):
     model = Paragraph
     inlines = [ElementsInline]
+    extra = 0
 
 
 @admin.register(TextWithImage)
