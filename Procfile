@@ -1,1 +1,1 @@
-web: gunicorn backend.api.wsgi
+web: gunicorn --pythonpath '/Users/Programowanko/PycharmProjects/psychologiczne_iq-django/backend' backend.api.wsgi
