@@ -12,5 +12,6 @@ import os
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'api.settings')
+os.environ.setdefault('PYTHONPATH', '/Users/Programowanko/PycharmProjects/psychologiczne_iq-django/backend')
 
 application = get_wsgi_application()
