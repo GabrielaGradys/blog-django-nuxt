@@ -9,7 +9,7 @@
           v-if="element.imagePosition == 'UP'||element.imagePosition == 'LE'"
           :src_dsk="require(`/Users/Programowanko/PycharmProjects/psychologiczne_iq-django/backend/media/${element.image}`)"
           contain="true"
-          class="w-1/5"
+          :class="element.imagePosition == 'UP'? '': 'w-1/5'"
       />
       <div class="grid text text-6"
            :class="element.imagePosition == 'RI' || element.imagePosition == 'LE'? 'w-4/5': 'w-full'"

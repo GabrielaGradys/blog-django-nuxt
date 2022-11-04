@@ -64,11 +64,11 @@ export default {
     text-decoration: underline;
   }
   h2 {
-  color: var(--pq_yellow);
-  font-family: var(--font-secondary);
-  font-size: 2em;
-  font-weight: bold;
-  margin: 0.67em 0;
+    color: var(--pq_yellow);
+    font-family: var(--font-secondary);
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.67em 0;
   }
   blockquote {
     color: var(--pq_light_blue);
@@ -78,6 +78,13 @@ export default {
     border-style: solid;
     border-color: var(--pq_dark_blue);
     border-left-width: 2px;
+  }
+  hr {
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    border-style: dotted;
+    border-top-width: 0.7em;
+    border-color: var(--pq_yellow);
   }
 }
 </style>
