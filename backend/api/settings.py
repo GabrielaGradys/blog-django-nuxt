@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'graphene_django',
     'ckeditor',
-    'backend.blog',
+    'blog',
     'blogPosts',
 ]
 
